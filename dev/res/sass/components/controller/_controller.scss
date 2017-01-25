@@ -1,0 +1,101 @@
+/* Controller */
+
+.controller {
+  user-select: none;
+}
+
+
+
+/* D-Pad */
+
+$dPadButton-width: 90px;
+$dPadButton-height: 70px;
+$dPadButton-shift: 45px;
+$dPadButton-background: $gray-dark;
+
+.dPad {
+  position: absolute;
+  top: 50%;
+  left: 27.5%;
+
+  &:before {
+    @include tx-pseudo;
+    width: $dPadButton-width;
+    height: $dPadButton-width;
+    margin: ($dPadButton-width / -2) 0 0 ($dPadButton-width / -2);
+    background: $dPadButton-background;
+  }
+
+}
+
+%dPadButton {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  overflow: hidden;
+  width: $dPadButton-width;
+  height: 0;
+  padding: $dPadButton-height 0 0;
+  margin: 0 0 0 ($dPadButton-width / -2);
+  background: $dPadButton-background;
+  touch-action: none;
+  transform-origin: 50% 100%;
+}
+
+.dPadUp {
+  @extend %dPadButton;
+  transform: translateY(-$dPadButton-shift);
+}
+
+.dPadRight {
+  @extend %dPadButton;
+  transform: translateX($dPadButton-shift) rotate(90deg);
+}
+
+.dPadDown {
+  @extend %dPadButton;
+  transform: translateY($dPadButton-shift) rotate(180deg);
+}
+
+.dPadLeft {
+  @extend %dPadButton;
+  transform: translateX(-$dPadButton-shift) rotate(270deg);
+}
+
+
+
+/* Buttons */
+
+$button-size: 90px;
+$button-shift: 50px;
+
+.buttons {
+  position: absolute;
+  top: 50%;
+  right: 25%;
+}
+
+%button {
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  width: $button-size;
+  height: 0;
+  padding: $button-size 0 0;
+  border-radius: 50%;
+  margin: ($button-size / -2) 0 0 ($button-size / -2);
+  touch-action: none;
+}
+
+.buttonA {
+  @extend %button;
+  background: $red;
+  transform: translate($button-shift, -$button-shift);
+}
+
+.buttonB {
+  @extend %button;
+  background: $yellow;
+  transform: translate(-$button-shift, $button-shift);
+}

@@ -1,0 +1,43 @@
+{
+  "color_variables_files": [
+    "/Users/uncleFucka/Projects/SocketTetris/dev/res/sass/project/_project.scss",
+    "/Users/biryukov/Projects/SocketTetris/dev/res/sass/project/_project.scss",
+    "D:/Projects/Projects/SocketTetris/dev/res/sass/project/_project.scss"
+  ],
+  "folders": [{
+      "folder_exclude_patterns": ["app", "design", "dev", "docs", "meta", "node_modules", "sources", "tests"],
+      "file_exclude_patterns": ["*.zip", "*.sublime-project"],
+      "follow_symlinks": true,
+      "name": "SocketTetris: Project",
+      "path": "."
+    }, {
+      "folder_exclude_patterns": ["public"],
+      "follow_symlinks": true,
+      "name": "SocketTetris: App",
+      "path": "app"
+    }, {
+      "follow_symlinks": true,
+      "name": "SocketTetris: HTML",
+      "path": "dev/res/templates"
+    }, {
+      "follow_symlinks": true,
+      "name": "SocketTetris: Sass",
+      "path": "dev/res/sass"
+    }, {
+      "follow_symlinks": true,
+      "name": "SocketTetris: JavaScript",
+      "path": "dev/res/js-dev"
+    }, {
+      "follow_symlinks": true,
+      "name": "SocketTetris: Tests",
+      "path": "tests"
+    }, {
+      "follow_symlinks": true,
+      "name": "SocketTetris: Meta",
+      "path": "meta"
+    }, {
+      "follow_symlinks": true,
+      "name": "SocketTetris: Docs",
+      "path": "docs"
+    }]
+}
