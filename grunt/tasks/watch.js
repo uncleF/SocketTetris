@@ -26,10 +26,10 @@ module.exports = (grunt, options) => {
         'postcss'
       ]
     },
-    javascript: {
-      files: [`${project.res.js.devDir}**/*.js`, `!${project.res.js.devDir}${project.res.js.service}.js`],
-      tasks: ['browserify']
-    },
+    // javascript: {
+    //   files: [`${project.res.js.devDir}**/*.js`, `!${project.res.js.devDir}${project.res.js.service}.js`],
+    //   tasks: ['browserify']
+    // },
     livereload: {
       options: {
         livereload: true
@@ -37,7 +37,7 @@ module.exports = (grunt, options) => {
       files: [
         `${project.dir}*.html`,
         `${project.res.css.dir}**/*.css`,
-        `${project.res.js.dir}**/*.{js,json}`,
+        `${project.res.dir}**/*.{js,json}`,
         `${project.dir}**/*.${helpers.imageFiles}`
       ]
     }

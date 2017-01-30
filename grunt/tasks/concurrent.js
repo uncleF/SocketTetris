@@ -9,7 +9,7 @@ module.exports = (grunt, options) => {
       'watch:html',
       'watch:images',
       'watch:sass',
-      'watch:javascript',
+      // 'watch:javascript',
       'watch:livereload'
     ]
   };

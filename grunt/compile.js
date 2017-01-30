@@ -13,7 +13,7 @@ module.exports = (grunt, options) => {
     'process-images',
     'process-html',
     'process-css',
-    'process-js'
+    // 'process-js'
   ];
 
   grunt.registerTask('compile', 'Compiling', _ => tx.conditionalTask(grunt, project, compileCondition, compileTasks, compileConditionalTask, compileConditionalTaskIndex));

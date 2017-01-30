@@ -16,6 +16,7 @@ body {
 .page {
 
   &-game {
+    display: flex;
     background: $gray-dark;
   }
 

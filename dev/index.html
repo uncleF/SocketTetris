@@ -14,19 +14,28 @@
     <meta name="MobileOptimized" content="320">
     <meta http-equiv="cleartype" content="on">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="@tx-title Project">
-    <meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="@tx-title Project">
+<meta name="mobile-web-app-capable" content="yes">
     <link type="text/plain" rel="author" href="/humans.txt">
     <link href="favicon.ico" rel="icon" type="image/x-icon">
-    <!--[if IE]> <link href="favicon.ico" rel="shortcut icon" type="image/x-icon"> <![endif]-->
-    <link href="maskIcon.svg" rel="mask-icon" type="image/svg+xml" color="#fd746c">
+<!--[if IE]> <link href="favicon.ico" rel="shortcut icon" type="image/x-icon"> <![endif]-->
+<link href="maskIcon.svg" rel="mask-icon" type="image/svg+xml" color="#fd746c">
     <meta name="theme-color" content="#fd746c">
   </head>
 
   <body class="page-game">
-    <canvas id="tetris" width="240" height="400"></canvas>
-    <script src="res/js/scriptsGame.js" defer></script>
+    <div class="player">
+      <canvas class="tetris" width="240" height="400"></canvas>
+    </div>
+    <div class="player">
+      <canvas class="tetris" width="240" height="400"></canvas>
+    </div>
+    <script src="res/js-dev/arena.js" defer></script>
+<script src="res/js-dev/player.js" defer></script>
+<script src="res/js-dev/tetris.js" defer></script>
+<script src="res/js-dev/main.js" defer></script>
+
   </body>
 
 </html>
